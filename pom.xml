@@ -36,7 +36,7 @@
 						<uri>https://anypoint.mulesoft.com</uri>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
-						<applicationName>CICDDEMO</applicationName>
+						<applicationName>CICDDEMO-Dsaurabh</applicationName>
 						<password>Kohinoor#00</password>
 						<muleVersion>4.3.0</muleVersion>
 					</cloudHubDeployment>
