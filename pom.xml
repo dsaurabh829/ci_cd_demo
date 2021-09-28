@@ -34,7 +34,7 @@
 				<configuration>
 				<cloudHubDeployment>
 				<username>saurabh_dixit_1</username>
-				<environment>Sandox</environment>
+				<environment>Sandbox</environment>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
 				<applicationName>ci_cd_demo</applicationName>
