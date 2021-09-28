@@ -32,9 +32,11 @@
 					<cloudHubDeployment>
 						<username>saurabh_dixit_1</username>
 						<environment>Sandbox</environment>
+						<businessGroup>Apisero</businessGroup>
+						<uri>https://anypoint.mulesoft.com</uri>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
-						<applicationName>cicddemo</applicationName>
+						<applicationName>CICDDEMO</applicationName>
 						<password>Kohinoor#00</password>
 						<muleVersion>4.3.0</muleVersion>
 					</cloudHubDeployment>
