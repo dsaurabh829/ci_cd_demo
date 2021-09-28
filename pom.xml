@@ -37,7 +37,7 @@
 				<environment>Sandbox</environment>
 				<workers>1</workers>
 				<workerType>Micro</workerType>
-				<applicationName>ci_cd_demo</applicationName>
+				<applicationName>cicddemo</applicationName>
 				<password>Kohinoor#00</password>
 				<muleVersion>4.3.0</muleVersion>
 				</cloudHubDeployment>
