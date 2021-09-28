@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="16e9a59f-f914-49f0-825f-cf8551370435" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="ci_cd_demoFlow" doc:id="2c151272-1f62-4338-af8a-c2702265698a" >
+		<http:listener doc:name="Listener" doc:id="95506f65-d337-41a7-af1d-d5ce84af3976" config-ref="HTTP_Listener_config" path="/cicddemo"/>
+		<set-payload value='#[{&#10;	"message": "This is CI/CD demo"&#10;}]' doc:name="Set Payload" doc:id="20624181-435e-4056-ad96-264a0ee46ac8" />
+		<logger level="INFO" doc:name="Logger" doc:id="d3c573ff-e99f-4b0a-b77c-0f09c548eff1" />
+	</flow>
+</mule>
