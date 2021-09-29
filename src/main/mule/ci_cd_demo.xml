@@ -10,7 +10,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	</http:listener-config>
 	<flow name="ci_cd_demoFlow" doc:id="2c151272-1f62-4338-af8a-c2702265698a" >
 		<http:listener doc:name="Listener" doc:id="95506f65-d337-41a7-af1d-d5ce84af3976" config-ref="HTTP_Listener_config" path="/cicddemo"/>
-		<set-payload value='#[{&#10;	"message": "This is CI/CD demo",&#10;	"name": "Saurabh"&#10;}]' doc:name="Set Payload" doc:id="20624181-435e-4056-ad96-264a0ee46ac8" />
+		<set-payload value='#[{&#10;	"message": "This is CI/CD demo",&#10;	"name": "Hello " ++ (attributes.queryParams.name as String default "")&#10;}]' doc:name="Set Payload" doc:id="20624181-435e-4056-ad96-264a0ee46ac8" />
 		<ee:transform doc:name="Transform Message" doc:id="0572a5fb-b9ad-4dfd-9566-59d431ba6276" >
 			<ee:message >
 				<ee:set-payload ><![CDATA[%dw 2.0
