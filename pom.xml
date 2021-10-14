@@ -37,8 +37,8 @@
 						<workers>1</workers>
 						<workerType>Micro</workerType>
 						<applicationName>CICDDEMO-Dsaurabh</applicationName>
-						<password>Kohinoor#00</password>
-						<muleVersion>4.3.0</muleVersion>
+						<password>Admin@123</password>
+						<muleVersion>4.4.0</muleVersion>
 						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 				</configuration>
